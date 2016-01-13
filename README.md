@@ -22,7 +22,7 @@ Collection of reference implementation bundlers that convert, package, and deplo
 
 ## Use It
 
-Currently, there are two bundlers available in this package. The first converts your notebook to a dashboard web application and deploys it to your Jupyter Notebook server for local use. To use it:
+Currently, there are three bundlers available in this package. The first converts your notebook to a dashboard web application and deploys it to your Jupyter Notebook server for local use. To use it:
 
 1. Write a notebook.
 2. Define a dashboard layout using the `jupyter_dashboards` extension.
@@ -36,6 +36,13 @@ The second converts your notebook to a dashboard web application and zips it up 
 3. Click *File &rarr; Download as &rarr; PHP Dashboard bundle (.zip)*.
 4. Unzip the download.
 5. Refer to the `README.md` in the unzipped folder for deployment requirements.
+
+Similarly the third converts your notebook to a dashboard web application and zips it up with a Makefile. To use it:
+
+1. Write a notebook.
+2. Click *File &rarr; Download as &rarr; NodeJS Dashboard bundle (.zip)*.
+3. Unzip the download.
+4. Refer to the `README.md` in the unzipped folder for deployment requirements.
 
 ## Caveats
 

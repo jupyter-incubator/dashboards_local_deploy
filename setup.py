@@ -30,6 +30,11 @@ def _install_notebook_extension():
                 'label': 'PHP Dashboard bundle (.zip)',
                 'module_name': 'dashboards_bundlers.php_download',
                 'group': 'download'
+            },
+            'dashboards_node_download': {
+                'label': 'NodeJS Dashboard bundle (.zip)',
+                'module_name': 'dashboards_bundlers.nodejs_download.nodejs_download_bundler',
+                'group': 'download'
             }
         }
     })
