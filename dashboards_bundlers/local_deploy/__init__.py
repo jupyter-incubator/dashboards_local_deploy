@@ -82,7 +82,7 @@ def bundle_index(output_path, notebook_fn, template_fn=DEFAULT_TEMPLATE_PATH, in
     :param index_fn: Basename of the file to write to the output_path
     '''
     # Invoke nbconvert to get the HTML
-    full_output = create_index_html(notebook_fn, {}, 'html', os.getcwd(), template_fn)
+    full_output = create_index_html(notebook_fn, dict(os.environ), 'html', os.getcwd(), template_fn)
 
     # Write out the index file
     with open(pjoin(output_path, index_fn), 'wb') as f:
