@@ -16,8 +16,8 @@ from jupyter_core.paths import jupyter_path
 from notebook.utils import url_path_join
 from tornado import escape, web
 
-# Location of this file
-HERE = os.path.abspath(os.path.dirname(__file__))
+# Location of this file (avoid normalizing with abspath for Windows' sake)
+HERE = os.path.dirname(__file__)
 # Absolute path to the default template
 DEFAULT_TEMPLATE_PATH = pjoin(HERE, 'jinja_templates', 'index.html.tpl')
 # Absolute path for dashboard static resources
